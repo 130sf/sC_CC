@@ -1,0 +1,48 @@
+// mixin
+@mixin flexit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// mixin position
+@mixin position($top, $right, $bottom, $left) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+// mixin animations
+@mixin roundandround {
+    animation: rotation 20s infinite linear;
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg)
+        }
+        100% {
+            transform: rotate(359deg)
+        }
+    }
+}
+
+@mixin scrollingX {
+    animation: scroll 10s infinite linear;
+    @keyframes scroll {
+        0% {
+            transform: translateX(6%)
+        }
+        50% {
+            transform: translateX(-10%)
+        }
+        100% {
+            transform: translateX(6%);
+        }
+    }
+}
+
+@mixin spanText {
+    font-family: 'Larish Neue Semibold';
+    color: #fff;
+    -webkit-text-stroke: 1px #000;
+}
