@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "larish";
+  font-family: Larish, serif;
   background: #000;
   color: #fff;
 }
@@ -83,17 +83,22 @@ ul {
 }
 
 header {
-  height: 120vh;
-  width: 86%;
+  height: 100vh;
+  width: 85%;
   margin: 0 auto;
 }
 header div {
   text-align: center;
 }
 header div img {
-  width: 2px;
-  height: 25vh;
-  margin: 0.7rem 0 2rem 0;
+  width: 0.1rem;
+  height: 20vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0.4;
+}
+header .headline {
+  margin-top: 4vh;
+  font-family: Larish, serif;
 }
 header p {
   font-size: 1rem;
@@ -106,6 +111,7 @@ header h1 {
   width: 60%;
   line-height: 80%;
   margin: 0 auto;
+  font-family: LarishNeue;
 }
 header h1 .outline {
   color: #000;
