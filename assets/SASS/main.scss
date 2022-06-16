@@ -3,16 +3,15 @@
 @import "_mixin.scss";
 // Header
 header {
-    height: 100vh;
+    height: 70vh;
     width: 85%;
     margin: 0 auto;
-    div {
+    .line {
         text-align: center;
         img {
             width: .1rem;
             height: 20vh;
-            background-color: rgba(255, 255, 255, 0.3);
-            opacity: 0.4;
+            opacity: 0.5;
         }
     }
     .headline {
@@ -35,12 +34,14 @@ header {
             color: #000;
         }
     }
+    .flexbox {
+        margin-top: 8vh;
+    }
     .bear {
         display: flex;
         align-items: center;
     }
     .bear img {
-        opacity: 1;
         width: 4rem;
     }
 }
@@ -58,7 +59,7 @@ main {
         background-size: 42%;
         background-repeat: no-repeat;
         background-position-x: right;
-        background-position-y: 134%;
+        background-position-y: 90%;
         margin-bottom: 8rem;
         article {
             width: 86%;
@@ -81,9 +82,9 @@ main {
         background-color: #fff;
         color: #000;
         article:nth-of-type(1) {
-            width: 33%;
+            width: 34%;
             margin: 0 auto;
-            padding: 60vh 0 40vh 0;
+            padding: 30vh 0 40vh 0;
             h2 {
                 text-align: left;
                 line-height: 90%;
@@ -96,18 +97,18 @@ main {
             }
         }
         article:nth-of-type(2) {
-            width: 33%;
+            width: 42%;
             margin: 0 auto;
-            padding: 30vh 0 60vh 0;
+            padding: 5vh 0 60vh 5%;
             p {
-                font-size: 0.9rem;
+                font-size: 1rem;
                 line-height: 1.6rem;
                 padding: 1rem 1.2rem 0 0;
             }
         }
     }
     .stuck {
-        height: 230vh;
+        height: 130vh;
         position: relative;
         display: grid;
         grid-template-rows: repeat(2, 1fr);
@@ -118,25 +119,25 @@ main {
             aspect-ratio: 3/2;
         }
         &-1 {
-            @include position(-5%, 10%, "", "");
+            @include position(-2%, 8%, "", "");
         }
         &-2 {
-            @include position(15%, "", "", 5%);
+            @include position(12%, "", "", 5%);
         }
         &-3 {
-            @include position(35%, 0, "", "");
+            @include position(31%, 0, "", "");
         }
         &-4 {
-            @include position(48%, "", "", 15%);
+            @include position(41%, "", "", 20%);
         }
         &-5 {
-            @include position(58%, 13%, "", "");
+            @include position(49%, 13%, "", "");
         }
         &-6 {
-            @include position(73%, "", "", 0);
+            @include position(62%, "", "", 5%);
         }
         &-7.mBig {
-            @include position("", 10%, -4%, "");
+            @include position("", 20%, -3%, "");
             width: 33%;
             aspect-ratio: 3/2;
             z-index: 3;
